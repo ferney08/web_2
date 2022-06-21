@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "4ffe5c44-6f73-49f2-b78a-ac41bb10463c",
+		"name": "EA1: API REST NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17467050"
+	},
+	"item": [
+		{
+			"name": "Listar inventarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/inventario/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuario/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar marcas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/marca/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar tipo de equipos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar estado de equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estadoEquipo/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estadoEquipo",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar inventario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\": \"1\",\r\n    \"modelo\": \"1\",\r\n    \"descripcion\": \"Laptop\",\r\n    \"foto\": \"https://foto.png\",\r\n    \"color\": \"Negro\",\r\n    \"fechaCompra\": \"2022-05-21\",\r\n    \"precio\": 99,\r\n    \"usuario\": \"\",\r\n    \"marca\": \"\",\r\n    \"tipoEquipo\": \"\",\r\n    \"estadoEquipo\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/inventario/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"inventario",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Emily\",\r\n    \"email\": \"emily@email.com\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuario/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar marcas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Samsung\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/marca/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar tipo de equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Movil\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar estado de equipo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"BB\",\r\n    \"estado\": \"Activo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estadoEquipo/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estadoEquipo",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"_id\": \"6289745483d89f6b5fc52426\",\r\n        \"nombre\": \"Cali\",\r\n        \"email\": \"cali@email.com\",\r\n        \"estado\": \"Activo\",\r\n        \"fechaCreacion\": \"2022-05-21T23:23:00.615Z\",\r\n        \"fechaActualizacion\": \"2022-05-21T23:23:00.615Z\",\r\n        \"__v\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/usuario/editar/6289745483d89f6b5fc52426",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"editar",
+						"6289745483d89f6b5fc52426"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar marca",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"_id\": \"6289767087355f4f424a9b31\",\r\n        \"nombre\": \"Lenovo\",\r\n        \"estado\": \"Activo\",\r\n        \"fechaCreacion\": \"2022-05-21T23:32:00.339Z\",\r\n        \"fechaActualizacion\": \"2022-05-21T23:32:00.340Z\",\r\n        \"__v\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/marca/editar/6289767087355f4f424a9b31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marca",
+						"editar",
+						"6289767087355f4f424a9b31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar tipo de equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"_id\": \"62897b5b8810910877aa04ec\",\r\n        \"nombre\": \"Carro\",\r\n        \"estado\": \"Activo\",\r\n        \"fechaCreacion\": \"2022-05-21T23:52:59.920Z\",\r\n        \"fechaActualizacion\": \"2022-05-21T23:52:59.920Z\",\r\n        \"__v\": 0\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tipoEquipo/editar/62897b5b8810910877aa04ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tipoEquipo",
+						"editar",
+						"62897b5b8810910877aa04ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar estado de equipo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"_id\": \"62899ec92bb3ae5253e8cd6f\",\r\n        \"nombre\": \"Magda\",\r\n        \"estado\": \"Activo\",\r\n        \"fechaCreacion\": \"2022-05-22T02:24:09.974Z\",\r\n        \"fechaActualizacion\": \"2022-05-22T02:24:09.974Z\",\r\n        \"__v\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estadoEquipo/editar/62899ec92bb3ae5253e8cd6f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estadoEquipo",
+						"editar",
+						"62899ec92bb3ae5253e8cd6f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar inventario",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
